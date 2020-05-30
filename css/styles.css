@@ -99,10 +99,11 @@ header{
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
+    padding-top: 94px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid var(--border-color); 
+    
 }
 
 
@@ -153,7 +154,11 @@ header{
 }
 
  
-
+address{
+    
+    font-style: normal;
+    margin-left: auto;
+}
 
 .site-address {
     
@@ -162,6 +167,9 @@ header{
     margin: 0;
     padding: 0;
 } 
+
+
+
 .address-list{
     
     padding: 0;
@@ -181,11 +189,14 @@ header{
 
 }    
  
-address{
-    
-     font-style: normal;
-     margin-left: auto;
- }
+.icon-envelope{
+    margin-right: 10px;
+}
+.icon-phone{
+    margin-right: 10px;
+}
+
+
  
 
 
@@ -227,6 +238,12 @@ address{
     text-align: center;
     margin: 0;
     padding:0 0 94px 0;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    background-image: url(../images/hero.jpg);
+    width: 1600px;
+    height: 600px;
+    background-position: center;
    
     
 }
@@ -245,17 +262,9 @@ address{
 }
 <!--преимущества-->
 
-.icon:hover,
-.icon:focus{
-    color:var(--link-color);   
-}
 
-.icon{
-    background-color: var(--buttons-background);
 
-    padding: 24px 100px;
-    
-}
+
 .advantages{
     display:flex;
     padding:0 0 94px 0;
@@ -267,8 +276,39 @@ address{
 }
 
 
+
 .advantages-list:not(:last-child){
     margin-right: 30px;
+}
+
+.advantages-list::before{
+    content: "";
+    
+    height: 120px;
+    
+    display: block;
+    background-size: 70px contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--buttons-background);
+    
+}
+
+
+.advantages-list:nth-child(1)::before{
+    background-image: url(../images/antenna.svg);
+}
+
+.advantages-list:nth-child(2)::before{
+    background-image: url(../images/clock.svg);
+}
+
+.advantages-list:nth-child(3)::before{
+    background-image: url(../images/pc.svg);
+}
+
+.advantages-list:nth-child(4)::before{
+    background-image: url(../images/astronaut.svg);
 }
 .advantages-title {
     font-size: 14px;
@@ -297,14 +337,14 @@ address{
 .section{
     letter-spacing: 0.03em;
 
-    
+    display: flex;
     padding-bottom: 94px;
     margin: 0;
 }
 .section-app{
     display:flex;
     padding: 0 0 94px 0;
-    margin: 0;
+   
 
 }
 
@@ -342,7 +382,8 @@ address{
 
 
         padding: 94px 0 50px 0;
-        margin: 0;
+        margin: 0 auto;
+        width:1200px;
         
     
     }
@@ -359,7 +400,6 @@ address{
 
   display: flex;
   width:270px;
-   margin: 0;
    padding: 0;
 
 }
@@ -500,7 +540,7 @@ margin-bottom: 0;
 }
 .companies-list{
   
-    margin: 0;
+    
     padding: 0 0 94px 0 ;  
 
     display: flex;
