@@ -11,8 +11,8 @@
   />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<!-- Шапка сайта -->
-<header>
+                                       <!-- Шапка сайта -->
+<header >
     <div class="container">
         <nav>
                 <a href="./index.html" class="upper-logo">
@@ -28,8 +28,24 @@
         <address>
                
             <ul class="site-address">
-                <li class="site-address-list" ><a href="mailto:info@devstudio.com" class="address-list"  >info@devstudio.com</a></li>
-                <li class="site-address-list" ><a href="tel:+380961111111" class="address-list" >+38 096 111 11 11</a></li>
+                <li class="envelope" >
+                   
+                    <a href="mailto:info@devstudio.com" class="address-list ">
+                        <svg class="icon-envelope" width="16" height="11.2">
+                            <use href="./images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        <span>info@devstudio.com</span>
+                    </a>
+                </li>
+                <li  >
+                    
+                    <a href="tel:+380961111111" class="address-list" >
+                        <svg class="icon-phone" width="10" height="10.94">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                       <span>+38 096 111 11 11</span> 
+                    </a>
+                </li>
            </ul>
            
         </address>
@@ -39,7 +55,7 @@
         
 
     <main>
-        <div class="container">
+        <div class="buttons-container">
             
    <ul class="buttons-list" >
        <li><button type="button" class="buttons">Все</button></li>
@@ -168,16 +184,45 @@
 </div>
 <div >
     <b class="join">присоединяйтесь</b>
-    <ul class="social-links">
-    <li><a href="" class="social-links" aria-label="Instagram"></a></li>
-    <li><a href="" class="social-links" aria-label="Twitter"></a></li>
-    <li><a href="" class="social-links" aria-label="Facebook"></a></li>
-    <li><a href="" class="social-links" aria-label="Linkedin"></a></li>
+    <ul class="social-footer">
+        <li class="social-links"><a href=""  aria-label="Instagram">
+            <span class="visually-hidden">Instagram</span>
+            <svg class="icon-footer" width="20" height="20">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+            </a>
+            </li>
+            <li class="social-links"><a href=""  aria-label="Twitter">
+                <span class="visually-hidden">Twitter</span>
+                <svg class="icon-footer" width="20" height="18">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+            </a>
+            </li>
+            <li class="social-links"><a href=""  aria-label="Facebook">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="icon-footer" width="15" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            </li>
+            <li class="social-links"><a href=""  aria-label="Linkedin">
+                <span class="visually-hidden">Linkedin</span>
+                <svg class="icon-footer" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+            </li>
 </ul>
 </div>
 <div class="subscription">
     <b class="join">подписаться на рассылку</b><br>
-    <button type="button" class="button-footer">Подписаться</button>
+    <button type="button" class="button-footer">Подписаться
+        <span class="visually-hidden">join</span>
+                <svg class="icon-join" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-paper_plane"></use>
+                </svg>
+    </button>
 </div>
 </div>   
 <div >

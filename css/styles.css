@@ -71,6 +71,7 @@ ul{
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);;
 }
 <!-- Шапка сайта -->
 
@@ -99,13 +100,30 @@ header{
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-top: 94px;
+   
     margin: 0 auto;
     align-items: center;
     justify-content: center;
     
 }
 
+.buttons-container{
+    display: flex;
+    justify-content: center; 
+    border-top: 1px solid var(--border-color); 
+}
+
+.advantages-container{
+    padding-top: 94px;
+    display: flex;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+   
+    margin: 0 auto;
+    
+    
+}
 
 .pages{
     
@@ -168,16 +186,15 @@ address{
     padding: 0;
 } 
 
-
+.envelope{
+    margin-right: 30px;
+}
 
 .address-list{
     
     padding: 0;
 }
 
-.site-address :not(:last-child) {
-    padding-right: 50px;
-}
 
 .address-list{
     color: var(--accent-color);
@@ -186,6 +203,7 @@ address{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1px;
+    fill:var(--accent-color);
 
 }    
  
@@ -205,6 +223,7 @@ address{
  .address-list:hover,
  .address-list:focus{
     color:var(--link-color);
+    fill:var(--link-color);
 }
 
 
@@ -236,13 +255,16 @@ address{
     letter-spacing: 0.06em;
 
     text-align: center;
-    margin: 0;
-    padding:0 0 94px 0;
+    margin: 0 auto;
+   
 
-    background-color: rgba(47, 48, 58, 0.8);
-    background-image: url(../images/hero.jpg);
+    
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.8), rgba(255, 255, 255, 0.1)), url(../images/hero.jpg)  ;
+ 
     width: 1600px;
     height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
    
     
@@ -256,7 +278,7 @@ address{
     text-transform: uppercase;
     
     margin: 0;
-    padding-bottom: 46px;
+    padding: 200px 452px 30px 452px;
 
     
 }
@@ -281,35 +303,16 @@ address{
     margin-right: 30px;
 }
 
-.advantages-list::before{
-    content: "";
-    
-    height: 120px;
-    
-    display: block;
-    background-size: 70px contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.advantages-icon{
     background-color: var(--buttons-background);
-    
+    width: 270px;
+    height: 120px;
+    padding:25px;
 }
 
 
-.advantages-list:nth-child(1)::before{
-    background-image: url(../images/antenna.svg);
-}
 
-.advantages-list:nth-child(2)::before{
-    background-image: url(../images/clock.svg);
-}
 
-.advantages-list:nth-child(3)::before{
-    background-image: url(../images/pc.svg);
-}
-
-.advantages-list:nth-child(4)::before{
-    background-image: url(../images/astronaut.svg);
-}
 .advantages-title {
     font-size: 14px;
     line-height: 1.1;
@@ -410,6 +413,7 @@ address{
    width: 370px;
    margin: 0 30px 0 0;
    padding: 0;
+   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);;
 }
 
 
@@ -437,7 +441,8 @@ address{
 .social {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 0 24px 0;
+    justify-content: space-evenly;
 }
 .social:not(:last-child){
     margin-right: 30px;
@@ -451,18 +456,39 @@ address{
 
     
 }
+
+
 .social-links{
     color:var(--social-link-color);
 
-    margin: 0;
-    padding: 0 ;
-
+    text-align: center;
+    padding:12px 12px;
+    width: 44px;
+    height: 44px;
+    
+}
+.social-links:hover{
+    background-color: var(--link-color);
+    border-radius:50% ;
 }
 
-.social-links:hover,
-.social-links:focus{
-    color: var(--link-color);
+
+.icon-social{
+    fill:var(--accent-color);
 }
+
+.icon-social:hover{
+    fill:var(--secondary-text-color);
+   
+    
+   
+}
+
+.visually-hidden{
+    display: none;
+  visibility: hidden;
+}
+
 
 
 .works .products{
@@ -490,8 +516,14 @@ address{
 margin-bottom: 0;
 }
 
+.products-list:hover,
+.products-list:focus{
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    border: border: 1px solid #EEEEEE;
+}
+
 .p{
-    padding: 20px 21px;
+    padding: 20px;
    
 }
 
@@ -546,15 +578,14 @@ margin-bottom: 0;
     display: flex;
     justify-content: space-between;
 }
-.section-companies :focus{
-    border: var(--link-color)
+.section-companies:focus,
+.section-companies:hover{
+    outline: 1px solid var(--link-color);
 }
-.section-companies :hover{
-    color:var(--link-color)    
-}
-.section-companies{
-    color: var(--accent-color);
 
+
+
+.section-companies{
     
     padding: 20px 20px ;
     outline:  1px solid var(--social-link-color);
@@ -621,7 +652,15 @@ footer{
 .logo:focus{
     color: var(--link-color);
 }
+.icon-logo{
+    fill:var(--social-link-color);
+}
 
+
+
+.icon-logo:hover{
+    fill:var(--link-color)
+}
 
 .subscription{
     margin-right:216px;
@@ -667,13 +706,37 @@ footer{
 .join{
     text-transform: uppercase;
 
-    padding-right: 94px;
+    display: flex;
 }
 .join:hover,
 .join:focus{
     color: var(--link-color);
 }
+.icon-join{
+    margin-left:10px;
+}
+.social-footer{
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+.social-footer .social-links{
+    
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    
+}
+.social-footer .social-links:not(:last-child){
+    margin-right: 10px;
+}
 
+.social-footer .social-links:hover{
+    background-color: var(--link-color);
+}
+.icon-footer {
+    fill: var(--secondary-text-color);
+}
 
 .mail{
     color: rgba(255,255,255, 0.6);
