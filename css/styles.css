@@ -216,10 +216,6 @@ address{
 
 
  
-
-
-
-
  .address-list:hover,
  .address-list:focus{
     color:var(--link-color);
@@ -229,9 +225,9 @@ address{
 
 <!-- Герой -->
 
-.hero .order-button:hover,
-.hero .order-button:focus{   
-   background-color: var(--primary-text-color); 
+.order-button:hover,
+.order-button:focus{   
+   background-color:var(--primary-text-color); 
    color:var(--secondary-text-color);
 }
 
