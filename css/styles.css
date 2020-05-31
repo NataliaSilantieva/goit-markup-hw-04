@@ -226,10 +226,7 @@ address{
 <!-- Герой -->
 
 
-.order-button:focus{   
-   background-color:var(--primary-text-color); 
-   color:var(--secondary-text-color);
-}
+
 
 
 .order-button{
