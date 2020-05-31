@@ -678,9 +678,7 @@ footer{
 .button-footer:hover,
 .button-footer:focus{
     background-color: var(--primary-text-color);
-    color: var(--secondary-text-color);
-    font-family: inherit; 
-    font-weight: 900;
+    
 }
 
 .colortext{
