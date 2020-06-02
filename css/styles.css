@@ -238,6 +238,11 @@ address{
     background-color:var(--link-color);
 }
 
+.order-button:hover{
+    background-color: var(--accent-color);
+    color: var(--link-color);
+}
+
 .hero{
     letter-spacing: 0.06em;
 
