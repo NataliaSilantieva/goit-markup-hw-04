@@ -222,14 +222,16 @@ address{
 
 
 
-
- button .order-button{
+button{
+    display:inline-block;
+}
+  .order-button{
    
     color: var(--secondary-text-color);
     font-family: inherit;
     font-size: 16px;
     line-height: 1.9;
-   
+    
     margin:0;
     padding:10px 32px;
     border-radius: 4px;
@@ -452,11 +454,6 @@ address{
 
 .social-links{
     color:var(--social-link-color);
-
-    text-align: center;
-    padding:12px 12px;
-    width: 44px;
-    height: 44px;
     
 }
 .social-links:hover{
@@ -467,6 +464,10 @@ address{
 
 .icon-social{
     fill:var(--accent-color);
+    text-align: center;
+    padding:12px 12px;
+    width: 44px;
+    height: 44px;
 }
 
 .icon-social:hover{
@@ -710,8 +711,10 @@ footer{
 }
 .social-footer{
     display: inline-flex;
-    margin: 0;
+    margin: 21px 0 0 0;
     padding: 0;
+    width: 44px;
+    height:44px;
 }
 .social-footer .social-links{
     
@@ -729,6 +732,9 @@ footer{
 }
 .icon-footer {
     fill: var(--secondary-text-color);
+    padding:12px 12px;
+    width: 44px;
+    height: 44px;
 }
 
 .mail{
